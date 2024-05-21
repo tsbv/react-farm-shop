@@ -1,2 +1,2 @@
 # react-farm-shop
-Created with CodeSandbox
+Магазин фермерских продуктов с доставкой
