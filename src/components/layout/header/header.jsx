@@ -6,8 +6,10 @@ import "./style.css";
 function Header() {
   return (
     <header className="header">
-      <Logo />
-      <Nav />
+      <div className="header__wrapper">
+        <Logo />
+        <Nav />
+      </div>
     </header>
   );
 }
