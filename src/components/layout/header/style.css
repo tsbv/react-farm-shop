@@ -13,4 +13,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Мобилка и планшет */
+@media (max-width: 768px) {
+  .header__wrapper {
+    padding: 10px 30px;
+    justify-content: center;
+  }
 }

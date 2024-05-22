@@ -20,3 +20,26 @@
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
+
+/* Планшет */
+@media (max-width: 768px) {
+  .advantages__wrapper {
+    padding: 100px 50px;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .advantages__wrapper {
+    padding: 100px 30px;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
