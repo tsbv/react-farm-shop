@@ -13,13 +13,15 @@ function AdvantageCategory({ className = "", category }) {
     case CardCategory.FARM:
       options = {
         text: "Фермерские продукты",
-        bgColor: "#88aa4d"
+        bgColor: "#88aa4d",
+        isNegative: false
       };
       break;
     case CardCategory.STORE:
       options = {
         text: "Магазинные продукты",
-        bgColor: "#f75531"
+        bgColor: "#f75531",
+        isNegative: true
       };
       break;
     default:

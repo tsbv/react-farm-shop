@@ -8,7 +8,7 @@ function Advantages({ advantages }) {
   return (
     <section className="advantages">
       <div className="advantages__wrapper">
-        {advantages?.length ? (
+        {advantages && advantages.length ? (
             <>
               <Title>Почему фермерские продукты лучше?</Title>
               <ul className="advantages__list">

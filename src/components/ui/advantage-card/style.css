@@ -1,6 +1,17 @@
 .advantage-card {
   margin: 0;
   padding: 20px;
+  min-height: 197px;
+  background-color: #e1edce;
+}
+
+.advantage-card__top {
+  display: flex;
+  gap: 20px;
+}
+
+.advantage-card__negative {
+  background-color: #f8ddd7;
 }
 
 .advantage-card__category {
