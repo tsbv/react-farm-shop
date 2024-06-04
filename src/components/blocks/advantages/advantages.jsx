@@ -18,7 +18,7 @@ function Advantages({ advantages }) {
                   </li>
                 ))}
               </ul>
-              <Button minWidth={260}>Купить</Button>
+              <Button minWidth={260} link="/buy">Купить</Button>
             </>
           ) : null}
       </div>

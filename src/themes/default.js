@@ -11,5 +11,6 @@ export const defaultTheme = {
   pagePadding: "90px",
   fontFamily: '"Inter", "Arial", sans-serif',
   fontSizeDefault: "18px",
-  pageWidth: "1280px"
+  pageWidth: "1280px",
+  indent: "20px"
 };

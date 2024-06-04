@@ -1,4 +1,6 @@
-.button {
+import styled from "styled-components";
+export const StyledButton = styled.a`
+  padding: 16px;
   display: block;
   min-width: 260px;
   max-width: 700px;
@@ -12,18 +14,16 @@
   text-align: center;
   text-decoration: none;
   border: none;
-  background-image: none;
-  box-shadow: none;
   cursor: pointer;
   transition: background-color 0.2s ease-out, box-shadow 0.2s ease-out;
-}
 
-.button:hover,
-.button:active {
-  background-color: #fc7427;
-  box-shadow: inset 0 4px 0 0 rgba(0, 0, 0, 0.14);
-}
+  &:hover,
+  &:active {
+    background-color: #fc7427;
+    box-shadow: inset 0 4px 0 0 rgba(0, 0, 0, 0.14);
+  }
 
-.button:active {
-  box-shadow: none;
-}
+  &:active {
+    box-shadow: none;
+  }
+`;
