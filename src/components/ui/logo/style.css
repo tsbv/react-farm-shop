@@ -12,6 +12,7 @@
 
 .logo__text {
   display: flex;
+  align-items: center;
   min-height: 44px;
   font-weight: 700;
   font-size: 28px;
