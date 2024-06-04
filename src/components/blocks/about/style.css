@@ -48,3 +48,11 @@
   margin: 24px 0 0 0;
   padding: 0;
 }
+
+/* Фильтр при расширении <= 1030px */
+@media screen and (max-width: 1030px) {
+  .about__descr-wrapper {
+    filter: drop-shadow(2px 4px 6px #000000);
+    color: #ffffff;
+  }
+}
