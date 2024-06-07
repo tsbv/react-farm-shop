@@ -4,13 +4,13 @@ import AdvantageCard from "../../ui/advantage-card/advantage-card";
 import Button from "../../ui/button/button";
 import "./style.css";
 
-function Advantages({ advantages }) {
+function Advantages({ advantages, level }) {
   return (
     <section className="advantages">
       <div className="advantages__wrapper">
         {advantages && advantages.length ? (
             <>
-              <Title>Почему фермерские продукты лучше?</Title>
+              <Title level={level}>Почему фермерские продукты лучше?</Title>
               <ul className="advantages__list">
                 {advantages.map((advantage) => (
                   <li className="advantages__item" key={advantage.id}>
