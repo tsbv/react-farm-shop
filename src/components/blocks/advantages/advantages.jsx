@@ -2,27 +2,27 @@ import React from "react";
 import Title from "../../ui/title/title";
 import AdvantageCard from "../../ui/advantage-card/advantage-card";
 import Button from "../../ui/button/button";
-import "./style.css";
+import { StyledAdvantages, AdvantagesWrapper, AdvantagesList } from "./style";
 
 function Advantages({ advantages, level }) {
   return (
-    <section className="advantages">
-      <div className="advantages__wrapper">
+    <StyledAdvantages>
+      <AdvantagesWrapper>
         {advantages && advantages.length ? (
             <>
               <Title level={level}>Почему фермерские продукты лучше?</Title>
-              <ul className="advantages__list">
+              <AdvantagesList>
                 {advantages.map((advantage) => (
                   <li className="advantages__item" key={advantage.id}>
                     <AdvantageCard {...advantage} />
                   </li>
                 ))}
-              </ul>
+              </AdvantagesList>
               <Button minWidth={260} link="/buy">Купить</Button>
             </>
           ) : null}
-      </div>
-    </section>
+      </AdvantagesWrapper>
+    </StyledAdvantages>
   );
 }
 
