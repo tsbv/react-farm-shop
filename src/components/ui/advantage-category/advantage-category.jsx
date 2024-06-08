@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css";
+import { StyledAdvantageCategory } from "./style";
 
 export const CardCategory = {
   FARM: "farm-products",
@@ -33,12 +33,9 @@ function AdvantageCategory({ className = "", category }) {
   }
 
   return options.text ? (
-    <span
-      className={`${className}`}
-      style={{ backgroundColor: options.bgColor }}
-    >
+    <StyledAdvantageCategory className={className} $bgColor={options.bgColor}>
       {options.text}
-    </span>
+    </StyledAdvantageCategory>
   ) : null;
 }
 

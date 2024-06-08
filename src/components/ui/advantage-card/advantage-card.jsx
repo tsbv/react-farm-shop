@@ -1,6 +1,6 @@
 import React from "react";
 import Title, { TitleSize, TitleLevel } from "../../ui/title/title";
-import "./style.css";
+import { StyledAdvantageCard, StyledAdvantageCategory, CardTopWrapper, Image, Text } from "./style";
 import AdvantageCategory from "../advantage-category/advantage-category";
 
 function AdvantageCard({
@@ -11,24 +11,28 @@ function AdvantageCard({
   description
 }) {
   return (
-    <article className={`advantage-card${isNegative ? " advantage-card__negative" : ""}`}>
-      <div className="advantage-card__top">
-        <img
-            className="advantage-card__image"
+    <StyledAdvantageCard isNegative={isNegative}>
+      <CardTopWrapper>
+        <Image
+            src={image}
             width={56}
             height={56}
-            src={image}
             alt={name}
           />
         <div className="advantage-card__description-wrapper">
-          <AdvantageCategory className="advantage-card__category" category={category} />
+          <StyledAdvantageCategory isNegative={isNegative}>
+            {category}
+          </StyledAdvantageCategory>
           <Title size={TitleSize.SMALL} level={TitleLevel.H3}>
             {name}
           </Title>
         </div>
-      </div>
-      <p className="advantage-card__text" dangerouslySetInnerHTML={{ __html: description }}></p>
-    </article>
+      </CardTopWrapper>
+      <Text
+        className="advantage-card__text"
+        dangerouslySetInnerHTML={{ __html: description }}
+      />
+    </StyledAdvantageCard>
   );
 }
 
