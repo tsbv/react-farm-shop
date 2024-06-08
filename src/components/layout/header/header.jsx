@@ -1,16 +1,19 @@
 import React from "react";
 import Logo from "../../ui/logo/logo";
 import Nav from "../../layout/nav/nav";
-import "./style.css";
+import "./style";
+import { StyledHeader, HeaderWrapper } from "./style";
 
-function Header() {
+function Header({
+  pageUrl
+}) {
   return (
-    <header className="header">
-      <div className="header__wrapper">
+    <StyledHeader>
+      <HeaderWrapper>
         <Logo />
-        <Nav />
-      </div>
-    </header>
+        <Nav pageUrl={pageUrl} />
+      </HeaderWrapper>
+    </StyledHeader>
   );
 }
 

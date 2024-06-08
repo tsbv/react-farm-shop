@@ -5,7 +5,7 @@ export const StyledFooter = styled.footer`
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #ffffff;
+  background-color: ${(props) => props.theme.colorWhite};
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 `;
 
@@ -28,9 +28,9 @@ export const FooterWrapper = styled.div`
 
 export const Copyright = styled.span`
   font-weight: 400;
-  font-size: 18px;
+  font-size: ${(props) => props.theme.fontSizeDefault};
   line-height: 1.5;
-  color: #333333;
+  color: ${(props) => props.theme.colorBlackForText};
   min-height: 27px;
   min-width: 122px;
   max-width: 700px;
