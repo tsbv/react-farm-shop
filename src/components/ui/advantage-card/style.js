@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import AdvantageCategory from "../advantage-category/advantage-category";
 
 export const StyledAdvantageCard = styled.article`
   margin: 0;
@@ -21,12 +20,8 @@ export const Image = styled.img`
   display: block;
 `;
 
-/* .advantage-card__negative {
-  background-color: #f8ddd7;
-} */
-
 export const StyledAdvantageCategory = styled.span`
-  margin: 0 0 4px 0;
+  margin: 0 0 9px 0;
   padding: 2px 10px;
   max-width: 340px;
   min-height: 25px;

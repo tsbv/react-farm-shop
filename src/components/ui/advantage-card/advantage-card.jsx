@@ -1,7 +1,6 @@
 import React from "react";
 import Title, { TitleSize, TitleLevel } from "../../ui/title/title";
 import { StyledAdvantageCard, StyledAdvantageCategory, CardTopWrapper, Image, Text } from "./style";
-import AdvantageCategory from "../advantage-category/advantage-category";
 
 function AdvantageCard({
   image,
