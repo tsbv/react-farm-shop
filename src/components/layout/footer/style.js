@@ -1,13 +1,15 @@
-.footer {
+import styled from "styled-components";
+
+export const StyledFooter = styled.footer`
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: #ffffff;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-}
+`;
 
-.footer__wrapper {
+export const FooterWrapper = styled.div`
   margin: 0 auto;
   padding: 18px 90px;
   max-width: 1280px;
@@ -17,9 +19,14 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
-}
 
-.footer__copyright {
+  @media (max-width: 768px) {
+    padding: 18px 30px;
+    justify-content: center;
+  }
+`;
+
+export const Copyright = styled.span`
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
@@ -28,11 +35,5 @@
   min-width: 122px;
   max-width: 700px;
   text-align: center;
-}
+`;
 
-@media (max-width: 768px) {
-  .footer__wrapper {
-    padding: 18px 30px;
-    justify-content: center;
-  }
-}
